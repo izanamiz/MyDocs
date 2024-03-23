@@ -1,0 +1,17 @@
+Hướng dẫn đăng nhập vào hệ thống LMS
+1. sinh viên đăng nhập vào hệ thống theo link: 
+https://lmsattt.ptit.edu.vn/
+
+2. Đăng nhập sử dụng
+- tên tài khoản: mã sinh viên
+ví dụ:b20dccn001
+- mật khẩu mặc định là: attt%123
+chú ý: sinh viên nào đã sử dụng tài khoản LMS thì sử dụng mật khẩu của bản thân. Sinh viên lần đầu vào hệ thống sử dụng mật khẩu mặc định và sau đó phải thay đổi mật khẩu. Nếu bị quên mật khẩu thì dùng chức năng quên mật khẩu và kiểm tra email của HV.
+
+3. Sau khi đăng nhập xong tại trang chủ tìm đến khóa học "Năm học 20223-2023, Học Kỳ 2"
+
+4. Tìm đến môn "Thi An Toàn và Bảo Mật Hệ Thống Thông Tin D20 CN_2023"
+
+5. Bắt đầu làm bài thực hành làm quen hệ thống ở mục "Test". Sử dụng mật khẩu "Test@1"
+
+6. Thời gian của bài kiểm tra tự động đếm ngược. Sinh viên có thể đánh dấu những câu chưa làm được ở bảng phụ. Khi hết giờ quy định thì hệ thống tự động nộp bài. Sinh viên có thể làm bài thử nghiệm này nhiều lần cho quen với môi trường làm bài thi.

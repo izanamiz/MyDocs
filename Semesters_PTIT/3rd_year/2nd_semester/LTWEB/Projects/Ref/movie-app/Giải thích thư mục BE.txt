@@ -1,0 +1,28 @@
+*com.project.movie.confifg
+- BeanConfiguration: Cấu hình Bean
+- JwtTokenProvider: Cấu hình JWT như tạo JWT, validate JWT, lấy dữ liệu sau khi giải mã JWT
+- PasswordEncoderConfig: Cấu hình mã hóa password khi đăng ký
+- SecurityConfig: cấu hình security
+- SecurityFilter: xử lý các yêu cầu đến bằng cách kiểm tra xem người dùng đã đăng nhập chưa. Nếu người dùng đã đăng nhập, ta cho phép yêu cầu đi tiếp tới các Controller, ngược lại ta quay lại trang đăng nhập. SecurityFilter sẽ kiểm tra xem một yêu cầu cụ thể có được phép truy cập tài nguyên được yêu cầu hay không bằng cách xác minh thông tin đăng nhập và các quyền của người dùng.
+
+*com.project.movie.constant
+- AppConstant: định nghĩa các biến hằng cho ứng dụng
+
+*com.project.movie.controller: chứa các file controller cho Auth, Genre, Movie, Review
+
+
+***package domain thường được sử dụng để chứa các đối tượng đại diện cho các thực thể trong hệ thống, chẳng hạn như các đối tượng được lưu trong cơ sở dữ liệu hoặc các đối tượng được sử dụng trong logic xử lý.
+*com.project.movie.domain.common
+- ApiResponse: đối tượng chứa thông tin phản hồi response
+- ApiResponseStatus: đối tượng chứa status (mã phản hồi), message (thông điệp phản hồi)
+- BaseDao: BaseDao là một interface hoặc abstract class chứa các phương thức cơ bản (CRUD) để truy cập và thao tác dữ liệu với cơ sở dữ liệu, bao gồm các phương thức như tạo, đọc, cập nhật và xóa dữ liệu
+
+*com.project.movie.domain.dao: chứa các class định nghĩa các cột thuộc tính của các thực thể như User, Movie, Genre, Review trong database
+
+*com.project.movie.domain.dto: định nghĩa các đối tượng dùng để truyền dữ liệu giữa các thành phần khác nhau trong ứng dụng. Các đối tượng DTO này được sử dụng để chuyển dữ liệu giữa lớp Controller và Service
+
+*com.project.movie.repository: chứa các repository của ứng dụng
+
+*com.project.movie.service: Chứa các class của từng đối tượng để thao tác dữ liệu với database
+
+*com.project.movie.util: chứa các class dùng để custom request được gửi từ client, response trả về từ server.
