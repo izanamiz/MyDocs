@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <p class="header">BACKGROUND</p>
+      <p class="header">GENERATOR</p>
+      <div class="list-button">
+        <div class="btn">
+          <input type="color" id="btn-clr-1" value="#ffff00" onchange="changeBgImg()"/>
+        </div>
+        <div class="btn">
+          <input type="color" id="btn-clr-2" value="#ff0000" onchange="changeBgImg()" />
+        </div>
+        <button class="btn" onclick="randomColor()">Random</button>
+      </div>
+      <p class="sub-header">THIS IS THE BACKGROUND</p>
+      <p class="btn-clr-text">
+        linear-gradient(to right, rgb(255,255,0) rgb(255,0,0))
+      </p>
+    </div>
+  </body>
+</html>
