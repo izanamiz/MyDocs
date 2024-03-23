@@ -1,0 +1,56 @@
+- Mô tả HT bằng ngôn ngữ tự nhiên:
+	- Mục đích HT
+	- Phạm vi HT
+	- Hoạt động nghiệp vụ của chức năng
+	- Thông tin của đối tượng
+	- Quan hệ giữa các đối tượng
+
+- Scenario:
+	- Actor
+	- Tiền điều kiện
+	- Hậu dk
+	- Kịch bản chính: User tương tác - Hệ thống phản hồi
+	- Ngoại lệ
+
+- Trích xuất lớp thực thể:
+	- Mô tả HT trong 1 đoạn văn
+	- Trích các danh từ
+	- Đánh giá và lựa chọn các danh từ làm lớp thực thể hoặc thuộc tính
+	- Xác định quan hệ số lượng giữa các thực thể
+	
+- Sơ đồ lớp thực thể pha thiết kế:
+	- Bổ sung thuộc tính id, trừ các lớp có kế thừa từ lớp khác
+	- Bổ sung kiểu dữ liệu cho các thuộc tính. Kiểu dữ liệu phải tương ứng với kiểu dữ liệu của ngôn ngữ lập trình đã chọn
+	- Chuyển đổi các quan hệ association sang các dạng aggregation/composition: A-B tạo ra C -> A chứa C, C chứa B
+	- Bổ sung thuộc tính đối tượng của các lớp thực thể, nếu có
+		- Giữa hai lớp có quan hệ aggregation/composition thì lớp chứa lớp còn lại nên khai báo tường minh thuộc tính có kiểu là lớp còn lại
+		- Số lượng (số ít/số nhiều) của thuộc tính phụ thuộc vào quan hệ số lượng giữa hai thực thể.
+
+- Thiết kế CSDL:
+	- Mỗi lớp thực thể đề xuất bảng tương ứng
+	- Với mỗi lớp thực thể, bỏ qua các thuộc tính kiểu đối tượng, lấy các thuộc tính kiểu cơ bản đưa sang làm thuộc tính của bảng tương ứng
+	- Xét quan hệ số lượng giữa các lớp thực thể, quan hệ số lượng giữa hai lớp thực thể cũng là quan hệ số lượng giữa hai bảng tương ứng với hai lớp đấy
+	- Bổ sung khóa cho các bảng
+		- Khóa chính (Primary key – PK): Bảng nào có thuộc tính id thì thiết lập thuộc tính đó làm khóa chính cho bảng.
+		- Khóa ngoại (Foreinger key – FK): Nếu hai bảng tblA và tblB có quan hệ 1-n (1 tblA có n tblB), thì trong bảng tblB phải có khóa ngoài tham chiếu đến khóa chính của bảng tblA. 
+
+
+- Thiết kế giao diện
+	- Thiết kế giao diện cho các giao diện xuất hiện trong biểu đồ
+	- Đề xuất các lớp giao diện: 
+		- thiết kế các thuộc tính đã liệt kê
+		- bổ sung thuộc tính ẩn
+	- Đề xuất các lớp truy xuất dữ liệu (DAO)
+		- Đề xuất lớp dao cho phương thức, gán phương thức cho lớp
+		- Với mỗi phương thức thuộc lớp DAO: input, output (BaseDAO: connection: Connection, BaseDAO())
+
+- Package Diagram: 
+	- Các lớp thực thể đặt chung trong gói model
+	- Các lớp DAO đặt chung trong gói dao
+	- Các trang jsp để trong gói WebContent. Gói Webcontent được chia nhỏ thành các gói nhỏ hơn tương ứng với các giao diện cho các người dùng khác nhau 
+
+
+- Deployment Diagram
+	- Database(device node): MySql
+	- Web Server (device node): java, servlet, apache tomcat
+	- Web Client (device node): artifact: html, css, jsp
