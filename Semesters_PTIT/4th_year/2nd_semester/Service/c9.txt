@@ -1,0 +1,43 @@
+Service model design: Thiết kế mô hình dịch vụ(c3 chia các dv thành 4 loại)
+- cân nhắc thiết kế mô hình dịch vụ
+- thiết kế hướng đối tượng: chi tiết hơn phân tích, hoàn thiện/chuyển đổi kết quả của phân tích và mô hình hóa dv
+
+Contract Service
+- hợp đồng dv gồm nhiều tp: phi chức năng, cam kết chất lượng, bảo mật, service contract first: mô tả dv(hđ như nào, năng lực, ...) => qtr nhất
+- tiếp cận hợp đồng trước giúp định hình API 1 cách nhất quán
+
+1. Entity Service Design: dv thực thể
+- liên quan 1 hoặc nhiều thực thể nghiệp vụ trong tg thực của tổ chức
+- tập trung tính tái sử dụng, tự chủ linh hoạt
+- bổ sung metadata => dễ hiểu, dễ khám phá(public ra bên ngoài, thông qua kho dv), dễ tìm kiếm, tránh dư thừa
+
+2. Utility Service Design: dv tiện ích
+- đặc trưng: đóng gói, thực hiện chức năng công nghệ ở mức thấp => khó thiết kế hơn, do đặc trưng ở mức thấp dễ thay đổi do thay đổi công nghệ => ví dụ gửi tin nhắn: SMS -> zalo, fb, tele
+
+3. Microservice Design: vi dv
+- đặc trưng: là 1 dv có yc phi chức năng(hiệu năng, bảo mật)
+- nhược điểm web service: độ trễ, hiệu năng
+- tk micro nên sử dụng rest, có thể dùng web dựa trên SOAP nhưng k nên
+
+4. Task Service Design: dv tác vụ
+- composition controller(qđ sd dv nào, và thứ tự sd dv đó) => lq đến logic nghiệp vụ cần phải tự động hóa
+- thường có 1 điểm bắt đầu
+- thiết kế k khó nhưng khó về mặt kĩ thuật
+- tác vụ xử lý nhiều việc => tách thành 1 task, luồng riêng
+- bổ sung giao tiếp bất đồng bộ
+
+Case study
+- mỗi hình tương ứng với 1 ứng viên dv
+- output: tài liệu xml service contract, thường dưới dạng wsdl
+- ý nghĩa của service contract first: gd giao tiếp dv này với dv khác phải nhất quán, còn cài đặt có thể tùy ý
+
+Beginning
+- với mỗi năng lực dịch vụ, xđ/định nghĩa 1 type(định dạng trao đổi dữ liệu: trao đổi gì, tham số đầu vào, đầu ra; có schema riêng, đuôi file .xsd), mỗi type có thể viết trong tài liệu wsdl nhuwg nên thực hiện sd đặc tính module của web service: tức là thiết kế riêng, sau đó import vào tài liệu
+
+- chia thành 2 schema mà k định nghĩa 1 schema riêng(ví dụ dto: định nghĩa thông tin/cấu trúc của kiểu dl muốn trao đổi) vì hdv nên thông tin về lương,... nằm ở hệ thống kế toán, còn thông tin giao dịch,... nằm ở hệ thống qtri nhân sự 
+=> có thể xđ 1 xsd nhưng giảm tái sử dụng, linh hoạt
+=> những loại thông tin khác nhau có thể định nghĩa những schema khác nhau -> đóng gói, linh hoạt
+
+- sau khi định nghĩa type thì cần có interface để trao đổi kiểu đó
+	- thẻ portType(interface mà public ra ngoài
+	- mỗi hđ uv tương ứng với 1 thẻ operation (phân tích -> thiết kế)

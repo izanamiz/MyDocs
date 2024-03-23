@@ -1,0 +1,49 @@
+ 
+1. Hệ thống nhúng: cpu, memory, ngoại vi, bộ nhớ, bus, mạng(HT hiện đại)
+
+2. CPU
+- gồm: 
+	- CU
+	- ALU: phép toán số học(+,-,*,/), logic(AND, OR, NOT, dịch bit...)
+	- Memory Unit: register(thanh ghi địa chỉ, thanh ghi dữ liệu, trạng thái, cờ...), cache
+
+- chu kì 4 bước: fetch, decode, execute, write back
+	- IF(instruction fetch): đọc lệnh từ RAM qua thanh ghi MBR
+	- ID(instruction decode): giải mã qua thanh ghi IR
+	- EX(execute)
+	- WR(write back)
+
+- các kỹ thuật xử lý trong CPU
+	- pipeline: cơ chế thực hiện xen kẽ các lệnh của chương trình, cho phép đồng thời thực hiện nhiều lệnh => giảm thời gian TB thực hiện lệnh + tăng hiệu năng. Việc thực hiện lệnh được chia thành 5 giai đoạn
+		- Nhược điểm: xung đột tài nguyên(truy cập bộ nhớ, truy cập thanh ghi), xung đột dữ liệu
+
+IF	ID	EX	MEM	WB
+	IF	ID	EX	MEM	WB
+		IF	ID	EX	MEM	WB	
+			IF	ID	EX	MEM	WB
+				IF	ID	EX	MEM	WB
+	
+	- super pipeline	
+		- tiết kiệm nửa chu kỳ
+		- nhược điểm như pipeline nhưng phức tạp hơn 
+IF	ID	EX	MEM	  WB
+    IF	    ID	    EX	     MEM       WB	
+	IF	ID	EX        MEM       WB	
+	    IF      ID	     EX	       MEM       WB
+	        IF      ID	  EX	    MEM       WB
+
+	- super scaler
+		- thực hiện đồng thời 2 câu lệnh
+IF	ID	EX	MEM	WBs
+IF	ID	EX	MEM	WB
+	IF	ID	EX	MEM	WB
+	IF	ID	EX	MEM	WB
+		IF	ID	EX	MEM	WB
+		IF	ID	EX	MEM	WB	
+...
+
+- Kiến trúc tập lệnh:
+	- CISC
+	- RISC
+3. 
+

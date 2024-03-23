@@ -1,0 +1,29 @@
+đầu vào: quy trình nghiệp vụ cần tự động hóa
+đầu ra: 
+
+composition service: kết hợp 1 dv và 1 vài dịch vụ (1 task service với 3 entity service)
+
+- task service: dịch vụ để hiện thực hóa quy trình nghiệp vụ cụ thể (service composition controller), quyết định dịch vụ nào tham gia và thứ tự tham gia. B4 xác định thứ tự logic khả tri
+
+- REST service vs Web services: đối với mỗi ứng viên năng lực dịch vụ(web services xong là xong, có ngôn ngữ để đóng gói,...), REST dựa trên giao thức web truyền thống, dựa trên 1 số nguyên tắc để thực thi để các service consumer khi triệu gọi thì sẽ gọi gì(insert gọi post hoặc put,..) 
+=> năng lực dịch vụ phải ánh xạ với resources và method
+
+nội dung báo cáo phải có hình 7.17, ~10 trang
+
+Trước b5 có ứng viên dịch vụ thực thể, uvdv tác vụ cùng các năng lực
+B5,B6: đối với uv năng lực dv, xác định tài nguyên và phương thức cho năng lực đó
+
+B5: ánh xạ mỗi uvdv thực thể với 1 resource
+B6: với mỗi hành động, gán với 1 method
+b8: xác định ứng viên tổ hợp dịch vụ
+b9: phân tích yêu cầu xử lý
+- xác định 2 uvdv còn lại: vi dịch vụ(chỉ là dịch vụ đặc thù về mặt kỹ thuật: hiệu năng, bảo mật, độ tin cậy, tự chủ,..) và uvdv tiện ích(chức năng, hành động công nghệ ở mức thấp: in, ghi nhật ký, gửi thông báo)
+b10: xác định uvdv tiện ích(utility)
+- gom nhóm vào ngữ cảnh notification
+- document
+b11: xđ uv microservice
+b13: sửa uv tổ hợp dv
+
+ 
+
+

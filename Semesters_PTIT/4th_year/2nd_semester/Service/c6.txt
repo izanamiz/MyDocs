@@ -1,0 +1,47 @@
+CHƯƠNG 6:
+
+khả tri/bất khả tri
+capability: năng lực
+
+- ứng viên dịch vụ thực thể
+- uvdv tác vụ
+- phân nhóm tạo thành ngữ cảnh
+
+mô hình hóa chức năng oop: từ usecase viết kịch bản, mỗi UC có nhiều kịch bản, chọn 1 kb chuẩn và các kb ngoại lệ
+
+- Bước 6: xác định các ứng viên tổ hợp dịch vụ
+following:
+	- xđ 1 kb chuẩn
+	- 
+	- UVTHDV = 4 UVDV, 3 trong layer thực thể, 1 UV thuộc task service layer(dv tác vụ)
+=> là sự kết hợp của quy trình nghiệp vụ
+
+- Bước 7: Xác định lại các yc xử lý
+Đặc điểm của
+	- tính năng:
+	- dịch vụ: hiệu năng, tự chủ, độ tin cậy, bảo mật
+
+- Bước 8: Xđ uvdv tiện ích
+Gom nhóm vào 1 ngữ cảnh uvdv tiện ích là notification, hình tròn = dịch vụ(trên: tên dv, dưới: năng lực dv)
+
+- Bước 9: xđ uvdv vi dịch vụ
+	- có 1 hđ cần có yc về độ tin cậy + khả năng sửa lỗi => hành động xác thực người dùng
+	- k hình tam giác: web services
+	- có hình tam giác: REST services
+
+- Bước 10: Áp dụng lại bước 5(các quy tắc thiết kế hướng dv)
+
+- Bước 12: lặp đi lặp lại, chỉ ra uvdv và uv năng lực dv 
+
+dv tác vụ: timesheet submission
+vi dịch vụ: confirm authorization
+dv thực thể: employee, invoice, timesheet
+tiện ích: notification
+
+
+
+
+
+
+
+	
