@@ -1,0 +1,14 @@
+- Kỹ năng
+Em đã có kinh nghiệm học thuật xây dựng phần Frontend cho website sử dụng HTML, CSS, Javascript, ReactJs, Redux core/Redux toolkit và Material UI. Em có khả năng làm việc với RESTful API và giao tiếp với Backend. Không chỉ vậy, cá nhân em đã từng xây dựng các API Backend sử dụng Java.
+
+Bên cạnh đó, em đã có kinh nghiệm thực chiến lập trình ứng dụng di động với React Native tại một công ty Startup. 
+
+Hơn nữa, em từng đạt giải Khuyến khích kỳ thì ICPC cấp Học viện và đã có chứng chỉ TOEIC 750. 
+
+Em tin rằng sự hiểu biết về ngôn ngữ và kỹ thuật lập trình Web, cùng với kinh nghiệm thực tế trong lĩnh vực phát triển ứng dụng sẽ giúp em đóng góp tích cực vào sự thành công của dự án.
+
+- Kinh nghiệm: Về kinh nghiệm thực tập học thuật liên quan trực tiếp đến vị trí ứng tuyển, em đã từng hợp tác với đồng đội ở một CLB tại học viện để xây dựng phần Frontend của một website bán hàng với API từ một Backend có sẵn. Bên cạnh đó, cá nhân em cũng tự mình xây dựng một website quản lý sách với cả hai phần Frontend và Backend. Còn về kinh nghiệm thực chiến, em đã có kinh nghiệm lập trình ứng dụng di động với React Native tại một công ty Startup. Tại đây, khi còn là thực tập sinh em đã được hợp tác cùng đồng đội xây dựng các ứng dụng liên quan đến công cụ chuyển đổi âm thanh, ứng dụng trò chơi, ứng dụng gợi ý phim/tv show. Khi trở thành fresher tại công ty, em đã được leader giao nhiệm vụ xây dựng các ứng dụng một cách độc lập, tiêu biểu là ứng dụng phát nhạc.
+
+- Giải thưởng: Giải Khuyến khích kỳ thi lập trình theo chuẩn ICPC cấp Học viện (2022)
+
+- Nguyện vọng: Em mong muốn áp dụng kiến thức và phát triển kỹ năng lập trình web trong môi trường thực tế của công ty. Em sẽ nỗ lực tham gia vào các dự án, rèn luyện khả năng sáng tạo và giải quyết vấn đề. Em tin rằng sự hỗ trợ và cơ hội thực tập tại công ty sẽ giúp em phát triển và em cũng đóng góp tích cực vì sự hưng thịnh của quý công ty.

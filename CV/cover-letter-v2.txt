@@ -1,0 +1,18 @@
+Kính gửi: Ban tuyển dụng Công ty...
+
+Em là Trần Vân Anh, sinh viên năm 4 chuyên ngành Công nghệ phần mềm tại Học viện Công nghệ Bưu chính Viễn thông, với GPA 3.31 và từng đạt một số học bổng KKHT loại Giỏi và Xuất sắc. 
+
+Qua website tuyển dụng TopCV, em được biết công ty đang tuyển dụng vị trí Thực tập sinh Lập trình. Với kinh nghiệm 6 tháng làm việc tại vị trí TTS React Native, em tự tin bản thân có thể đáp ứng những tiêu chí mà công ty đưa ra.
+
+Em có khả năng xây dựng ứng dụng web động và responsive. Trong đó, các kỹ năng lập trình Frontend bao gồm: Html/Css, Bootstrap, Javascript, ReactJs, NextJs, Redux và Material UI. Bên cạnh đó em cũng có hiểu viết về lập trình Backend với Java Spring Boot, làm việc với Database như MySQL và triển khai RESTful APIs.
+
+Với kinh nghiệm thực tập ở vị trí React Native Developer, em đã đóng góp vào nhiều dự án như ứng dụng nghe nhạc, giới thiệu phim/tvshow và các công cụ chỉnh sửa video. Trong quá trình làm việc, em đã sử dụng hiệu quả các thư viện và công cụ sẵn có, áp dụng Realm Database để xử lý dữ liệu, sử dụng Git để quản lý phiên bản mã nguồn và tích hợp Typescript để tăng cường tính kiểm soát và hiệu suất của mã nguồn.
+
+Em có khả năng làm việc nhóm, hợp tác hiệu quả cùng đồng đội để đạt được mục tiêu chung và cũng có thể làm việc một cách độc lập, đảm nhận các nhiệm vụ của dự án.
+
+Em sở hữu chứng chỉ TOEIC 750 và khả năng đọc, hiểu tài liệu tiếng Anh tốt. Ngoài ra, em còn từng đoạt giải khuyến khích trong kỳ thi lập trình theo chuẩn ICPC do học viện tổ chức.
+
+Cám ơn anh/chị đã dành thời gian để đọc lá đơn của em. Em rất mong sẽ nhận được phản hồi sớm từ anh/chị. 
+
+Trân trọng!
+Trần Vân Anh
