@@ -1,0 +1,9 @@
+body{
+    background-color: pink;
+}
+
+@media screen and (device-width) {
+    body{
+        background-color: lightgreen;
+    }
+}

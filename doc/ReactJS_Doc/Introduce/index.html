@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@17.0.2/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.production.min.js"></script>
+    <!-- <script src="https://unpkg.com/react@18/umd/react.production.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.js" crossorigin></script> -->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+</head>
+
+<body>
+    <div id="root"></div>
+    <!-- <script type="text/babel" src="./main.js"> -->
+    <script type="text/babel">
+        // const myArray = ['apple', 'banana', 'orange'];
+
+        // const myList = myArray.map((item) => <p>{item}</p>)
+
+        // const myElement = <h1>React is {5 + 5} times better with JSX</h1>;
+
+        // const myElement = <input type="text" />;
+        function Car(props) {
+            return <h2>I am a {props.brand.model}!</h2>;
+        }
+
+        function Garage() {
+            const carInfo = { name: "Ford", model: "Mustang" };
+            return (
+                <React.Fragment>
+                    {""}
+                    <h1>Who lives in my garage?</h1>
+                    <Car brand={carInfo} />
+                    {""}
+                </React.Fragment>
+            );
+        }
+        const myElement = <Garage />;
+        console.log(document.getElementById("root"));
+        ReactDOM.render(myElement, document.getElementById('root'));
+
+    </script>
+</body>
+
+</html>

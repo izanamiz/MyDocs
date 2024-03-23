@@ -1,0 +1,117 @@
+Khái niệm cơ bản:
+- React Native là một framework để phát triển ứng dụng di động đa nền tảng bằng JavaScript. Với React Native, nhà phát triển có thể sử dụng cùng một mã nguồn để phát triển ứng dụng cho cả hai nền tảng iOS và Android. Điều này giúp giảm thời gian cũng như chi phí phát triển ứng dụng. 
+- là một công cụ giúp lập trình đa nền tảng để tạo ra các ứng dụng trên môi trường native
+- là một framework mã nguồn mở(mã code viết sẵn) được sáng tạo, phát triển bởi Facebook, cho phép sử dụng Js để phát triển ứng dụng di động trên nền tảng Android và IOS
+- giống như React, nhưng sử dụng các native components thay vì các web components
+
+- Có 3 thread:
+	- UI Thread(main thread) - Chuỗi giao diện người dùng: có quyền truy cập vào giao diện người dùng của ứng dụng
+	- Shadow Thread: sử dụng thư viện ReactJS và thực hiện tính toán bố cục của ứng dụng
+	- JavaScript Thread - Chuỗi JavaScript: thực thi và xử lý mã JavaScript
+=> Cách hoạt động: 
+	- tích hợp Main Thread và JS Thread cho một ứng dụng mobile. Main Thread sẽ đóng vai trò cập nhật giao diện người dùng (UI) và tiến hành xử lý tương tác của người dùng. Còn JS Thread sẽ là nơi thực thi, xử lý mã Javascript.
+	- Cần có một cầu nối (Bridge) để giúp 2 thread này tương tác với nhau vì chúng hoạt động một cách độc lập. Cầu nối giúp hai thread chuyển đổi dữ liệu qua lại cho nhau, đây là cách giúp chúng giao tiếp mà không phải phụ thuộc vào nhau.
+
+- Có 2 thread: 
+	- UI thread(main thread, giao diện người dùng): cập nhật giao diện người dùng (UI) và tiến hành xử lý tương tác của người dùng, thread duy nhất thao tác trực tiếp với UI và các thành phần native
+	- JavaScript thread (Bridge thread): thực thi và xử lý mã JavaScript, và gửi yêu cầu đến các thành phần native thông qua React Native Bridge. JavaScript thread cũng quản lý việc giao tiếp giữa JavaScript và native code.
+	- UI thread chịu trách nhiệm vẽ giao diện và hiển thị thông tin, trong khi JavaScript thread xử lý logic ứng dụng. Bridge thread đóng vai trò trung gian cho việc trao đổi thông tin giữa hai thread này. 
+
+Ưu điểm
+- tái sử dụng code: giúp các nhà phát triển không cần phải tạo mã riêng biệt cho các nền tảng Android và iOS
+- live reload: cho phép xem và thao tác với các thay đổi ngay lập tức
+
+Native App:
+-  là những ứng dụng được xây dựng và phát triển dựa trên chính những công cụ hỗ trợ mà các những phát triển cung cấp cho các lập trình viên, cụ thể là Xcode (của iOS) và Android (của Android).
+- Các Native App được xây dựng dựa trên ngôn ngữ và các tính năng sẵn có của chính hệ điều hành để vận hành mà không cần thông qua bất kỳ bên thứ ba nào nên sẽ có lợi thế về tốc độ.
+
+Hybrid App
+- Là sự kết hợp giữa ứng dụng mobile và ứng dụng Web. Nó được xây dựng dựa trên các ngôn ngữ như là CSS, JS và HTML và có thể tiến hành cài đặt trên điện thoại tương tự như các native app khác.
+
+
+Câu hỏi phỏng vấn:
+- React native là một ứng dụng mobile native
+
+- KeyExtractor: thông báo cho React biết những item nào được thay đổi, thêm vào hoặc được xóa đi khỏi list.
+
+- Virtual DOM:
+	- Giúp cải thiện hiệu suất ứng dụng bằng cách giảm thiểu việc cập nhật giao diện không cần thiết. Thay vì cập nhật từng phần tử một, nó chỉ cập nhật các phần tử có thay đổi, giúp tiết kiệm thời gian và tài nguyên của thiết bị di động.
+	- Là một cơ chế tối ưu hóa để cập nhật giao diện hiệu quả và đảm bảo rằng chỉ có những phần thay đổi thực sự mới được render lại.
+
+- StyleSheet.create giúp đảm bảo các giá trị không thể nhìn thấy và giữ cố định. Nó cũng chỉ được tạo ra duy nhất 1 lần.
+
+- Khi nào nên dùng 1 class component thay vì 1 functional component?: Nên dùng một class component khi component có state hoặc lifecycle method, trong trường hợp ngược lại bạn dùng một function component.
+
+- Điểm khác nhau giữa react và react native?
+	- mục tiêu: ReactJS là một thư viện JavaScript để xây dựng giao diện người dùng trên web, trong khi React Native là 1 framework được sử dụng để xây dựng ứng dụng di động đa nền tảng.
+	- Giao diện người dùng: ReactJS sử dụng HTML và CSS để tạo giao diện trên trình duyệt web, trong khi React Native sử dụng các thành phần tương tự như các thành phần di động của nền tảng đó.
+	- ReactJS sử dụng DOM để tương tác với trình duyệt, trong khi React Native sử dụng các API của nền tảng di động.
+
+- Hãy kể tên 1 vài core component của react native?
+	- Image, View, Text, ListView, TextInput, v.v.
+
+- Refs được dùng để tham chiếu đến một node DOM hoặc cũng có thể là một thể hiện của một component. Khi đó, refs sẽ return về một node mà bạn tham chiếu tới. (tham chiếu tới compo)
+
+- State: state trong các component được dùng để theo dõi thông tin,  là nơi lưu trữ và quản lý dữ liệu của một component., có thể thay đổi
+- Props: truyền dữ liệu xuống các component con và nó thì không có khả năng thay đổi.
+
+- Size của component được xác định như thế nào?
+
+- Component được điều khiển bởi loại dữ liệu nào?
+
+- Cách loại bỏ keyboard trong react native?
+
+- Native app có những ưu điểm gì so với hybrid app?
+
+- Có những tùy chọn lưu trữ nào trong react native?
+
+- JXS là gì? : viết html trong js
+
+- Props trong react natve là gì? Khác gì với state?
+	- Components là các thành phần có thể tái sử dụng trong ứng dụng. Props là dữ liệu được truyền từ cha đến con thông qua các components. Sự khác biệt giữa state và props là state được quản lý bởi component, trong khi props được truyền từ cha đến con. State có thể thay đổi, props thì không
+
+- Hiểu bản chất của state và props, lifecycle, sự khác nhau giữa stateless và stateful
+
+
+- 1. Phải nắm vững các cú pháp ES6/7, các thao tác với mảng và object phải biết map, filter, find, reduce. Biết await/async là lợi thế.
+
+- 2. Hiểu rõ bản chất props và state, lifecycle, phân biệt được stateless và stateful component (hoặc smart và dump component).
+
+- 3. Câu hỏi về App structure: Tổ chức file trong project.
+
+- 4. Biết cách thao tác với Rest API: đây là bắt buộc. Hiểu được POST/GET/PUT, body data và header (token user).
+
+- 5. Biết xài Redux là 1 lợi thế
+	- Redux là gì: Là 1 thư viện dùng để quản lí State
+	- Imutable data và chỉ thay đổi tuỳ vào việc xử lí action và reducer
+
+- 6. Đã biết sử dụng 1 số lib như React Navigation
+	- Sử dụng React Navigation để quản lý điều hướng. Stack Navigator được sử dụng để chuyển đổi giữa các màn hình và Tab Navigator được sử dụng để tạo tab bar dễ sử dụng.
+
+- Làm thế nào để cài đặt React Native?
+	- Trước hết cần cài đặt Node.js và sau đó sử dụng npm để cài đặt React Native CLI. 
+	- Bên cạnh đó, cần cài đặt các công cụ phát triển cho nền tảng di động mà bạn muốn phát triển trên, ví dụ như Xcode cho iOS và Android Studio cho Android.
+
+- Bạn có kinh nghiệm về định dạng giao diện người dùng trong React Native như StyleSheet, Flexbox, hoặc các thư viện UI như React Native Elements
+
+
+- Theo bạn, react native có phải là một ứng dụng mobile native?
+	- Theo tôi là không, React Native không phải là một ứng dụng mobile native. React Native là một framework phát triển ứng dụng di động đa nền tảng dựa trên JavaScript và React. Sự khác biệt chính giữa ứng dụng native và ứng dụng React Native là ngôn ngữ lập trình và cách ứng dụng được xây dựng.	
+	- Ứng dụng native được xây dựng bằng ngôn ngữ lập trình native cho từng hệ điều hành cụ thể, ví dụ như Swift hoặc Objective-C cho iOS, Java hoặc Kotlin cho Android. Chúng sử dụng các công cụ và API native của hệ điều hành để tương tác với các tính năng cụ thể của thiết bị như máy ảnh, GPS hoặc cảm biến.
+	- Trong khi đó, React Native cho phép phát triển ứng dụng sử dụng JavaScript và React, và sau đó chuyển đổi mã nguồn này thành mã native tương ứng cho cả hai nền tảng iOS và Android. Điều này giúp tiết kiệm thời gian và công sức so với việc phát triển hai ứng dụng native riêng biệt.
+
+
+- SDK: Software Development Kit
+
+- Metro Bundler
+	-  là một công cụ được sử dụng trong quá trình phát triển ứng dụng React Native. Nó chịu trách nhiệm cho việc đóng gói và bundling (ghi nhóm) mã nguồn JavaScript của ứng dụng để chuẩn bị cho quá trình chạy trên thiết bị hoặc máy mô phỏng.
+	- Bundling (Ghi nhóm): mã js, hình ảnh, font, các module, ..
+	- hot reloading: thay đổi mã nguồn js được áp dụng lập tức khi ƯD chạy
+
+- Build Gradle:
+	- tự động hóa quá trình biên dịch mã nguồn và tạo ra các file APK (Android Package) để triển khai ứng dụng
+	-  quản lý và tải xuống các dependencies (thư viện và module), đảm bảo rằng tất cả các phụ thuộc đều được tích hợp và sẵn sàng cho việc sử dụng trong quá trình chạy ứng dụng
+
+- ./gradlew clean:  xóa các tệp và thư mục được tạo ra trong quá trình xây dựng trước đó, bao gồm cả các tệp build và tệp cache, đảm bảo rằng bản build mới sẽ được tạo ra từ đầu mà không bị ảnh hưởng bởi các dữ liệu cũ
+
+- ./gradlew assembleRelease: tạo ra phiên bản release (phát hành) của ứng dụng

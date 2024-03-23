@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- id  -->
+    <!-- <p id="message">Chào mừng các bạn đến với lập trình JavaScript căn bản!</p>
+    <script>
+        var id = document.getElementsByTagName("p")[0].id = "xinChao";
+        //in ra id của p
+        document.write(document.getElementById("xinChao").id);
+
+        var p = document.getElementById("message");
+        // Thay đổi id
+        p.id = "xinChao";
+    </script> -->
+    <!-- ------------------------------------------------------------------------------------------------------------------------- -->
+
+
+    <!-- className -->
+    <!-- <p class="normal" id="message">Chào mừng các bạn đến với lập trình JavaScript căn bản!</p>
+    <button onclick="myFunction()">Nhấn vào để thành màu đỏ</button>
+    <script>
+        function myFunction() {
+            var x = document.getElementsByTagName("p")[0];
+            x.className = "red";
+        }
+    </script> -->
+    <!-- ------------------------------------------------------------------------------------------------------------------------- -->
+
+
+    <!-- tagName  -->
+    <!-- <p id="message">Chào mừng các bạn đến với lập trình JavaScript căn bản!</p>
+    <script>
+        var tag_name = document.getElementById("message").tagName;
+        //in ra tên thẻ của p chính là p
+        document.write(tag_name);
+    </script> -->
+    <!-- ------------------------------------------------------------------------------------------------------------------------- -->
+
+
+    <!-- innerHTML  -->
+    <!-- <p id="message">Chào mừng các bạn đến với lập trình JavaScript căn bản!</p>
+    <p id="messages1"></p>
+    <script>
+        var value = document.getElementById("message").innerHTML;
+        document.getElementById("messages1").innerHTML = value;
+    </script> -->
+    <!-- ------------------------------------------------------------------------------------------------------------------------- -->
+
+
+    <!-- outerHTML  -->
+    <!-- <h1 id="message">Xin chào các bạn đến với lập trình JavaScript căn bản!</h1>
+    <button onclick="myFunction()">Thay đổi Header</button>
+    <script>
+        function myFunction() {
+            document.getElementById("message").outerHTML =
+                "<h3 id='message_change'>Hello JS</h3>";
+        }
+    </script> -->
+    <!-- ------------------------------------------------------------------------------------------------------------------------- -->
+
+
+    <!-- attributes  -->
+    <!-- Ta có thuộc thẻ input có 4 thuộc tính type, id, onclick, value -->
+    <!-- <input type="button" id="btn" onclick="myFunction()" value="nhấn để xem" />
+    <p id="text"></p>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("btn").attributes[3].name;
+            document.getElementById("text").innerHTML = x;
+        }
+    </script> -->
+    <!-- ------------------------------------------------------------------------------------------------------------------------- -->
+
+
+    <!-- style  -->
+    <!-- <h1 id="myH1">Thay đổi màu của header</h1>
+    <button onclick="myFunction()">Nhấn nút này để chuyển sang màu đỏ</button>
+    <script>
+        function myFunction() {
+            // Thay đổi màu của thẻ H1
+            document.getElementById("myH1").style.color = "red";
+            document.getElementById("myH1").style.backgroundColor = "yellow";
+            document.getElementById("myH1").style.border = "1px solid blue";
+        }
+    </script> -->
+    <!-- ------------------------------------------------------------------------------------------------------------------------- -->
+
+
+    <!-- parentNode, childNodes -->
+    <!-- <ul id="khoaHoc">
+        <li>Học Java</li>
+        <li id="active">Học JavaScript</li>
+        <li>Học PHP</li>
+        <li>Học Pyton</li>
+        <li>NIIT - ICT Hà Nội</li>
+    </ul>
+    <div id="ketQua"></div>
+    <script>
+        // Nhắm đến phần tử cha của phần tử id = active
+        let x = document.getElementById("active").parentNode;
+        console.log(x.nodeName); // Kết quả: UL
+
+        // Lấy các node con của phần tử ul
+        let y = document.getElementById("khoaHoc").childNodes;
+        // Kiểm tra xem lấy được bao nhiêu node
+        console.log(y.length); // Kết quả: 11
+    </script> -->
+    <!-- ------------------------------------------------------------------------------------------------------------------------- -->
+
+
+    <!-- firstChild  -->
+    <!-- undefiend  -->
+    <!-- <ul id="khoaHoc">
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+    </ul> -->
+    <!-- A -->
+    <!-- Nếu có khoảng trống ở trước phần tử đầu tiên (dấu cách, xuống dòng, tab...) thì kết quả trả về là undefined. -->
+    <!-- <ul id="khoaHoc"><li>A</li><li>B</li><li>C</li></ul>
+
+    <div id="ketQua"></div>
+    <script>
+        // Lấy nội dung của thẻ li đầu tiên
+        var list = document.getElementById("khoaHoc").firstChild.innerHTML;
+        // Gán nội dung lấy được vào thẻ div
+        document.getElementById("ketQua").innerHTML = list;
+    </script> -->
+    <!-- ------------------------------------------------------------------------------------------------------------------------- -->
+
+
+    <!-- ceateElement(tagName), createTextNode(text), appendChild(node) -->
+    <!-- <ul id="khoaHoc">
+        <li>JavaScript</li>
+        <li>Java Full Stack</li>
+        <li>PHP Full Stack</li>
+    </ul>
+    <button onclick="themKhoaHoc()">Thêm Khóa học</button>
+    <script>
+        function themKhoaHoc() {
+            //Tạo thêm một đối tượng li
+            var node = document.createElement("li");
+            // Tạo một text node
+            var textnode = document.createTextNode("Full Stack DEV");
+            // Thêm text node vào node li vừa tạo
+            node.appendChild(textnode);
+            // Thêm phần tử vừa tạo vào cuối ul
+            document.getElementById("khoaHoc").appendChild(node);
+        }
+    </script> -->
+    <!-- ------------------------------------------------------------------------------------------------------------------------- -->
+
+
+    <!-- removeChild  -->
+    <ul id="khoaHoc">
+        <li>JavaScript</li>
+        <li>Java Full Stack</li>
+        <li>PHP Full Stack</li>
+    </ul>
+    <!-- <button onclick="themKhoaHoc()">Them Khoa Hoc</button> -->
+    <button onclick="xoaKhoaHoc()">Xoá Khóa học</button>
+   
+    <script>
+        function xoaKhoaHoc() {
+            // Chọn đến danh sách khóa học
+            let kh = document.getElementById("khoaHoc");
+            <!-- let kh = document.querySelector("#khoaHoc") -->
+
+            // Xóa phần tử con đầu tiên
+            kh.removeChild(kh.childNodes[0]);
+        }
+    </script>
+</body>
+
+</html>
