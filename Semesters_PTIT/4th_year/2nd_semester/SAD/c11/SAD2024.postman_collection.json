@@ -1,0 +1,255 @@
+{
+	"info": {
+		"_postman_id": "6821ef0b-4763-4c3c-8c82-a150bf4fc494",
+		"name": "SAD2024",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "29230665"
+	},
+	"item": [
+		{
+			"name": "chapter 11",
+			"item": [
+				{
+					"name": "Regist",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "First Name",
+									"value": "shayank",
+									"type": "text"
+								},
+								{
+									"key": "Last Name",
+									"value": "Jain",
+									"type": "text"
+								},
+								{
+									"key": "Email Id",
+									"value": "shayankit@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "Mobile Number",
+									"value": "1234567890",
+									"type": "text"
+								},
+								{
+									"key": "Password",
+									"value": "test@1234",
+									"type": "text"
+								},
+								{
+									"key": "Confirm Password",
+									"value": "test@1234",
+									"type": "text"
+								},
+								{
+									"key": "Address",
+									"value": "Mumbai",
+									"type": "text"
+								}
+							]
+						},
+						"url": "http://localhost:8000/userregistration/"
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"User Name\": \"shayankit@gmail.com\",\r\n\"Password\": \"test@1234\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8000/userinfo/"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Infor",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"User Name\": \"shayankit@gmail.com\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8000/userinfo/"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Product",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"User Name\": \"shayankit@gmail.com\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8000/userinfo/"
+					},
+					"response": []
+				},
+				{
+					"name": "Ship status",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"User Name\": \"shayankit@gmail.com\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8000/userinfo/"
+					},
+					"response": []
+				},
+				{
+					"name": "shipment data insert",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"User Name\": \"shayankit@gmail.com\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8000/userinfo/"
+					},
+					"response": []
+				},
+				{
+					"name": "Payment initate",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"User Name\": \"shayankit@gmail.com\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8000/userinfo/"
+					},
+					"response": []
+				},
+				{
+					"name": "Payment status",
+					"protocolProfileBehavior": {
+						"disabledSystemHeaders": {}
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\"User Name\": \"shayankit@gmail.com\"}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://localhost:8000/userinfo/"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Ecom_Sys",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"lth\",\r\n    \"password\": \"lth\",\r\n    \"email\": \"lth@gmail.com\",\r\n    \"age\": \"22\",\r\n    \"phone\": \"1234567890\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:8000/user/register/"
+					},
+					"response": []
+				},
+				{
+					"name": "New Request Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"lth\",\r\n    \"password\": \"lth\",\r\n    \"email\": \"lth@gmail.com\",\r\n    \"age\": \"22\",\r\n    \"phone\": \"1234567890\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:8000/user/register/"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

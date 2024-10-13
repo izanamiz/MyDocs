@@ -1,0 +1,29 @@
+I. Định nghĩa trình đk thiết bị(device driver)
+- Device driver: Kết nối giữa OS và các thiết bị I/O
+- Chức năng: dịch, convert các yc từ OS thành các câu lệnh mà bộ điều khiển ngoại vi có thể hiểu
+- là 1 phần của nhân OS(drivers là các module phần mềm được xd riêng biệt và cài vào OS khi cần thiết)
+
+* Ưu điểm 
+- đơn giản hóa hđ OS
+- k có device driver, OS chịu trách nhiệm giao tiếp trực tiếp với phần cứng => gây quá tải cho OS
+- nếu 1 thiết bị mới được cài đặt, dẫn đến phải thay đổi OS
+
+* Các loại device drivers
+- block:	
+	- Truy cập dữ liệu theo dạng block (khối) cố định. 
+	- Thường được sử dụng cho các thiết bị lưu trữ như ổ cứng, ổ đĩa quang.
+	- VD: Ổ cứng (HDD, SSD)
+- character
+	- Truy cập dữ liệu theo từng byte.
+	- Thường được sử dụng cho các thiết bị giao tiếp như bàn phím, chuột, cổng nối tiếp.
+	- VD: Bàn phím, chuột, cổng COM
+- terminal
+	- Cung cấp giao diện dòng lệnh để tương tác với thiết bị. 
+	- Thường được sử dụng cho các thiết bị đầu cuối như màn hình, máy in.
+	- VD: Màn hình console, máy in
+- stream
+	- Truy cập dữ liệu theo dạng luồng (stream) liên tục. 
+	- Thường được sử dụng cho các thiết bị âm thanh, video.
+	- VD: Card âm thanh, card video
+
+II. Middleware
